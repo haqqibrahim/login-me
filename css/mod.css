@@ -1,0 +1,51 @@
+.delayy {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+
+}
+
+.spinner_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.counterr {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.loading-spinner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(37, 106, 201);
+    /* border: 2px solid indigo; */
+
+    border-radius: 50%;
+    border-top-color: #0001;
+    display: inline-block;
+    animation: loadingspinner .7s linear infinite;
+}
+
+@keyframes loadingspinner {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+button:disabled {
+    background-color: grey !important;
+    color: white !important;
+}
